@@ -172,3 +172,28 @@ db.users.bulkWrite([
 
 * #### **$груповий етап**
     На груповому етапі дані поділяються на різні групи на основі певних критеріїв за допомогою пар ключ-значення. Кожна група представляє ключ у вихідному документі.
+
+Наприклад, розглянемо такі дані про продажі:
+```js
+{
+  _id: ObjectId("64ccc4ee5618a62f6dbef60f"),
+  Product: 'Shoe_1',
+  Sold: 2,
+  Section: 'Nike'
+  Amount: 30
+}
+{
+  _id: ObjectId("64ccc4ee5618a62f6dbef610"),
+  Product: 'Shoe_2',
+  Sold: 10,
+  Section: 'Nike'
+  Amount: 35
+}
+{
+  _id: ObjectId("64ccc4ee5618a62f6dbef611"),
+  Product: 'Bag_1',
+  Sold: 4,
+  Section: 'Adidas'
+  Amount: 27
+}
+```
